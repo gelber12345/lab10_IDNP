@@ -36,6 +36,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Longitud" />
+            <Button
+                android:id="@+id/btn_mapa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="GPS con Mapa"
+                />
         </LinearLayout>
     </RelativeLayout>
 </ScrollView>

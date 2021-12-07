@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsGPS">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            tools:context=".MapsGPS" />
+
+        <TextView
+            android:id="@+id/txtLatitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/map"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Latitud"
+            />
+        <TextView
+            android:id="@+id/txtValorLatitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtLatitud"
+            android:layout_centerHorizontal="true"
+            android:text="Latitud" />
+        <TextView
+            android:id="@+id/txtLongitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtValorLatitud"
+            android:layout_centerHorizontal="true"
+            android:text="Longitud" />
+        <TextView
+            android:id="@+id/txtValorLongitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtLongitud"
+            android:layout_centerHorizontal="true"
+            android:text="Longitud" />
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>
+
+

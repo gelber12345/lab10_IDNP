@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">lab10</string>
+    <string name="title_activity_maps_gps">MapsGPS</string>
 </resources>
