@@ -22,7 +22,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements LocationListener {
 
     double latitud,longitud;
-    TextView txtLatitud,txtLongitud;
+    TextView txtLatitud,txtLongitud,velocidad, altura, extra;
     LocationManager locationManager;
     Button btn_map_gps;
 
@@ -33,6 +33,10 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
 
         txtLatitud = findViewById(R.id.txtValorLatitud);
         txtLongitud= findViewById(R.id.txtValorLongitud);
+
+        velocidad=findViewById(R.id.txtValorVelocidad);
+        altura=findViewById(R.id.txtValorAltura);
+        extra=findViewById(R.id.txtValorExtra);
 
         btn_map_gps=findViewById(R.id.btn_mapa);
 
@@ -59,6 +63,9 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
 
         txtLongitud.setText("" + longitud);
         txtLatitud.setText(""+latitud);
+        velocidad.setText(""+location.getSpeed());
+        altura.setText(""+location.getAltitude());
+        extra.setText(""+location.getTime());
 
         locationManager.removeUpdates(this);
     }

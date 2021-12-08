@@ -36,7 +36,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
     implementation 'com.google.android.gms:play-services-maps:18.0.0'
-
+    //para el uso de FusedLocationProviderClient
     implementation 'com.google.android.gms:play-services-location:17.0.0'
 
     testImplementation 'junit:junit:4.+'

@@ -57,7 +57,7 @@ public class MapsGPS extends FragmentActivity implements OnMapReadyCallback {
     private GoogleMap mMap;
     private ActivityMapsGpsBinding binding;
 
-    TextView txt_valor_la, txt_valor_lo;
+    TextView txt_valor_la, txt_valor_lo, velocidad, altura, extra;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +74,10 @@ public class MapsGPS extends FragmentActivity implements OnMapReadyCallback {
         txt_valor_la=findViewById(R.id.txtValorLatitud);
         txt_valor_lo=findViewById(R.id.txtValorLongitud);
 
+        velocidad=findViewById(R.id.txtValorVelocidad);
+        altura=findViewById(R.id.txtValorAltura);
+        extra=findViewById(R.id.txtValorExtra);
+
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         obtenerUltimaUbicacion();
         mlocationCallback = new LocationCallback() {
@@ -84,6 +88,9 @@ public class MapsGPS extends FragmentActivity implements OnMapReadyCallback {
                 }
                 for (Location location : locationResult.getLocations()) {
                     agregarMarcador(location.getLatitude(),location.getLongitude());
+                    velocidad.setText(""+location.getSpeed());
+                    altura.setText(""+location.getAltitude());
+                    extra.setText(""+location.getTime());
                 }
 
             };

@@ -36,6 +36,27 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Longitud" />
+            <TextView
+                android:id="@+id/txtValorVelocidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtValorLongitud"
+                android:layout_centerHorizontal="true"
+                android:text="Longitud" />
+            <TextView
+                android:id="@+id/txtValorAltura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtValorVelocidad"
+                android:layout_centerHorizontal="true"
+                android:text="Longitud" />
+            <TextView
+                android:id="@+id/txtValorExtra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtValorAltura"
+                android:layout_centerHorizontal="true"
+                android:text="Longitud" />
             <Button
                 android:id="@+id/btn_mapa"
                 android:layout_width="wrap_content"
